@@ -1,4 +1,10 @@
-const obj = { name: "мечник", health: 10, level: 2, attack: 80, defence: 40 };
+export const obj = {
+  name: "мечник",
+  health: 10,
+  level: 2,
+  attack: 80,
+  defence: 40,
+};
 
 // {key: 'name', value: 'мечник'}
 // const name = 'name'
@@ -10,7 +16,7 @@ const obj = { name: "мечник", health: 10, level: 2, attack: 80, defence: 4
 //   console.log(`По ключу ${key} получено значение ${obj[key]}`);
 // }
 
-function orderByProps(obj, orders) {
+export function orderByProps(obj, orders) {
   const importantObjects = [];
   const objects = [];
 
@@ -49,7 +55,7 @@ function orderByProps(obj, orders) {
 
 console.log(orderByProps(obj, ["name", "level"]));
 
-const character = {
+export const character = {
   name: "Лучник",
   type: "Bowman",
   health: 50,
@@ -72,7 +78,7 @@ const character = {
   ],
 };
 
-function getObjeckt(arr) {
+export function getObjeckt(arr) {
   const newSpecialArr = [];
   arr.map((item) => {
     const newObj = {
